@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 export default function CarouselComponent({ slides }: {slides: any}) {
 
+  console.log(slides)
+
   const [currentSlide, setCurrentSlide] = useState(0)
 
   useEffect(() => {

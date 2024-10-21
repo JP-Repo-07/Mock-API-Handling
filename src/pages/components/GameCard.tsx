@@ -18,7 +18,7 @@ function GameCard({ filteredGames, handleStarClick }: {filteredGames: any, handl
                         <div className="absolute right-1 top-0.5">
                             <button className="size-5 flex justify-center items-center" onClick={() => handleStarClick(data?.id)}>{data?.isFavorite ? <FaStar className="w-full h-full" color="yellow" /> : <CiStar className="w-full h-full" color="black" />}</button>
                         </div>
-                        <img className="gap-4" src={data?.img} />
+                        <img className="gap-4" src={data?.img} alt={`img${data?.id}`} />
                     </div>
                 </div>
             ))}
