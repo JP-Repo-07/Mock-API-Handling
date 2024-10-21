@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 function GameCard({ filteredGames, handleStarClick }: {filteredGames: any, handleStarClick: any}){
     return(
         <div className="flex flex-wrap">
-			
+
 
         {filteredGames?.length === 0 ?
             <div className="w-full h-full flex justify-center items-center">

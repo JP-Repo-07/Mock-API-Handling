@@ -120,7 +120,11 @@ function Home() {
 						<SearchBar searchTerm={searchTerm} handleSearch={handleSearch} toggleProvidersComponent={toggleProvidersComponent} handleFavorites={handleFavorites} />
 				}
 			</div>
+			{filteredGames === undefined ?
+				<div>Loading your games...</div>
+				:
 				<GameCard filteredGames={filteredGames} handleStarClick={handleStarClick} />
+			}
 		</div>
 	);
 }
