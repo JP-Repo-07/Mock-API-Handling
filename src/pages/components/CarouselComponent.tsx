@@ -14,7 +14,7 @@ export default function CarouselComponent({ slides }: {slides: any}) {
       }, 4000);
     
 
-  }, [currentSlide])
+  }, [currentSlide, slides.length])
   
 
     return (
