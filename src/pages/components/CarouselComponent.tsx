@@ -19,9 +19,9 @@ export default function CarouselComponent({ slides }: {slides: any}) {
 
     return (
       <div className="w-full overflow-hidden relative">
-        <div className={`flex transition ease-out duration-400 translate-x-[-${currentSlide * 100}%]`} style={{transform: `translateX(-${currentSlide * 100}%)`}}>
+        <div className={`flex transition ease-out duration-400 `} style={{transform: `translateX(-${currentSlide * 100}%)`}}>
           {slides?.map((data: any) => {
-            return <img src={data} />
+            return <img src={data} alt={`img${data?.id}`} />
           })}
         </div>
       </div>
